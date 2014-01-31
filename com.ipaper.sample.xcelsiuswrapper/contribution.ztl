@@ -1,0 +1,31 @@
+class com.ipaper.sample.xcelsiuswrapper.XcelsiusWrapper extends Component {
+	/* Returns the current color of the box */
+	String getTitle() {*
+		return this.title;
+	*}
+
+	/* Sets the chart title */
+	void setTitle(/* the new title */ String newTitle) {*
+		this.title = newTitle;
+	*}
+	
+	/* Returns the chart labels */
+	String getLabels() {*
+		return this.chartLabels;
+	*}
+	
+	/* Sets the chart labels */
+	void setLabels(/* new chart labels */ String newLabels) {*
+		this.chartLabels = newLabels;
+	*}
+	
+	/* Returns the chart values */
+	String getValues() {*
+		return this.chartVals;
+	*}
+	
+	/* Sets the chart values */
+	void setValues(/* new chart values */ String newValues) {*
+		this.chartVals = newValues;
+	*}
+}

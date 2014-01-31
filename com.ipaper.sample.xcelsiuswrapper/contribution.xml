@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension xmlns="http://www.sap.com/bi/zen/sdk"
+	id="com.ipaper.sample.xcelsiuswrapper"
+	title="ChartJS Example"
+	version="1.0"
+	vendor="Mike Howles"
+	>
+	<component id="XcelsiusWrapper"
+		title="Xcelsius Wrapper"
+		icon="res/icon.png"
+		handlerType="div"
+		propertySheetPath="res/additional_properties_sheet/additional_properties_sheet.html">
+
+		<jsInclude>res/js/component.js</jsInclude>
+		<jsInclude>res/js/jquery.tools.min.js</jsInclude>
+		<cssInclude>res/css/component.css</cssInclude>
+
+		<property id="color" type="Color" title="Color" group="Display" />
+		<property id="swf" type="String" title="SWF URL" group="Display" />
+		<property id="title" type="String" title="Chart Title" group="Display" />
+		<property id="chartVals" type="String" title="Chart Values" group="Display" />
+		<property id="chartLabels" type="String" title="Chart Labels" group="Display" />
+		<initialization>
+			<defaultValue property="WIDTH">400</defaultValue>
+			<defaultValue property="HEIGHT">300</defaultValue>
+			<defaultValue property="title">Xcelsius Title</defaultValue>
+			<defaultValue property="chartVals">10,20,30,20,10</defaultValue>
+			<defaultValue property="chartLabels">Widgets, Gizmos, Cogs, Wheels, Spokes</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>

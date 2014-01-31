@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension xmlns="http://www.sap.com/bi/zen/sdk"
+	id="com.ipaper.sample.charts"
+	title="ChartJS Example"
+	version="1.0"
+	vendor="Mike Howles"
+	>
+	<component id="StackedBar"
+		title="Stacked Bar Chart"
+		icon="res/icon.png"
+		handlerType="div"
+		propertySheetPath="res/additional_properties_sheet/additional_properties_sheet.html">
+
+		<jsInclude>res/js/component.js</jsInclude>
+		<jsInclude>res/js/dx.chartjs.js</jsInclude>
+		<jsInclude>res/js/knockout-2.2.1.js</jsInclude>
+		<jsInclude>res/js/globalize.min.js</jsInclude>
+		<jsInclude>res/js/JSON.js</jsInclude>
+		<cssInclude>res/css/component.css</cssInclude>
+
+		<property id="color" type="Color" title="Color" group="Display" />
+		<property id="title" type="String" title="Chart Title" group="Display" />
+		<property id="rotated" type="boolean" title="Rotate Chart" group="Display" />
+		<property id="animated" type="boolean" title="Animated" group="Display" />
+		<property id="legendVisible" type="boolean" title="Legend Visible" group="Display" />
+		<property id="onclick" type="ScriptText" title="On Click" group="Events" />
+		
+
+		<initialization>
+			<defaultValue property="WIDTH">100</defaultValue>
+			<defaultValue property="HEIGHT">100</defaultValue>
+			<defaultValue property="color">#efefef</defaultValue>
+			<defaultValue property="legendVisible">true</defaultValue>
+			<defaultValue property="title">Stacked Bar</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>
